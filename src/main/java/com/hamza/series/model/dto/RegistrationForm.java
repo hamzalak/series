@@ -70,7 +70,20 @@ private String password ;
     public void setPassword(String password) {
         this.password = password;
     }
+
+    @Override
+    public String toString() {
+        return "RegistrationForm{" +
+                "nom='" + nom + '\'' +
+                ", prenom='" + prenom + '\'' +
+                ", email='" + email + '\'' +
+                ", dateNaissance='" + dateNaissance + '\'' +
+                ", numero='" + numero + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
 }
+
 /*
 *
 * nom, prénom, email, mot de

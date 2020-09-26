@@ -33,8 +33,7 @@ import java.text.ParseException;
 import java.util.*;
 import java.util.stream.Collectors;
 
-@CrossOrigin(origins = "*",maxAge = 3600)
-//@CrossOrigin(origins = "*",maxAge = 3600)
+@CrossOrigin(origins = "*",maxAge = 34000)
 
 @RequestMapping("/consult")
 @RestController
@@ -119,7 +118,6 @@ public class UserNonInscritController {
     }
     @PostMapping("/signup")
     public ResponseEntity<?> registerUser( @RequestBody RegistrationForm registrationForm) {
-
 
         if (userRepo.existsByEmail(registrationForm.getEmail())) {
             return ResponseEntity
