@@ -1,28 +1,20 @@
-package com.hamza.series.model;
+package com.hamza.series.model.dto;
 
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import org.hibernate.annotations.Cascade;
+ import com.hamza.series.model.Episode;
 
-import javax.persistence.*;
-import java.time.LocalDate;
-import java.util.Set;
-@Entity
-public class SerieForm {
+ import java.util.Set;
 
-    @javax.persistence.Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id ;
+ public class SerieForm {
+     private Integer id ;
     private String titre ;
     private  String description ;
     private String realisateur ;
     private String anneDeSortie ;
     private Integer nbrEpisode ;
-    @JsonIgnore
-    @OneToMany(mappedBy = "serie",fetch = FetchType.LAZY)
-    @Cascade({org.hibernate.annotations.CascadeType.DELETE})
     private Set<Episode> episodes ;
-
+    //private String mainImagePath ;
+    //Private Set<String> galleryImagesPaths ;
 
     public SerieForm(){
 

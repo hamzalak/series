@@ -1,11 +1,11 @@
-package com.hamza.series.userInscritLogic;
+package com.hamza.series.controllers.userInscritLogic;
 
 
 import com.hamza.series.model.Episode;
 import com.hamza.series.model.Serie;
 
-import com.hamza.series.model.SerieForm;
-import com.hamza.series.model.dto.MessageResponse;
+ import com.hamza.series.model.dto.MessageResponse;
+import com.hamza.series.model.dto.SerieForm;
 import com.hamza.series.repository.EpisodeRepo;
 import com.hamza.series.repository.SerieRepo;
 

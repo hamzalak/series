@@ -1,4 +1,4 @@
-package com.hamza.series.userNonInscritLogic;
+package com.hamza.series.controllers.userNonInscritLogic;
 
 
 import com.hamza.series.authLogic.jwt.JwtUtils;
@@ -17,7 +17,6 @@ import com.hamza.series.repository.RoleRepo;
 import com.hamza.series.repository.SerieRepo;
 import com.hamza.series.repository.UserRepo;
 import com.hamza.series.utility.DateUtils;
-import org.hibernate.id.IntegralDataTypeHolder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -74,7 +73,6 @@ public class UserNonInscritController {
         System.out.println("Get all series...");
         Map<String, Set<Episode>> series = new HashMap<>();
         Serie serie = serieRepo.getOne(id) ;
-        System.out.println(serie.toString());
         Set<Episode> episodes = episodeRepo.findBySerieId(id);
         Serie  serie1 = serieRepo.getOne(id) ;
         series.put(serie1.toString(),episodes) ;
