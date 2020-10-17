@@ -27,6 +27,6 @@ target/
 /.nb-gradle/
 build/
 ###properties###
-resources/
+src/main/resources/*
 ### VS Code ###
 .vscode/
