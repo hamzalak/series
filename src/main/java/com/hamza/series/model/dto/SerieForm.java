@@ -13,8 +13,6 @@ package com.hamza.series.model.dto;
     private String anneDeSortie ;
     private Integer nbrEpisode ;
     private Set<Episode> episodes ;
-    //private String mainImagePath ;
-    //Private Set<String> galleryImagesPaths ;
 
     public SerieForm(){
 

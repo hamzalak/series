@@ -19,6 +19,7 @@ public class Serie {
     private String realisateur ;
     private LocalDate anneDeSortie ;
     private Integer nbrEpisode ;
+    private String imagePath ;
     @JsonIgnore
     @OneToMany(mappedBy = "serie",fetch = FetchType.LAZY)
     @Cascade({org.hibernate.annotations.CascadeType.DELETE})
